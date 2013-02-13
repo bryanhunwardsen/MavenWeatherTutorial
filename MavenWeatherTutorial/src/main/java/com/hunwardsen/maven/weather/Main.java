@@ -10,8 +10,8 @@ public class Main {
 		// Configure Log4J
 		
 		PropertyConfigurator.configure(Main.class.getClassLoader().getResource("log4j.properties"));
-		// Read the Zip Code from the Command-line (if none supplied, use 95035)
-		String zipcode = "95035";
+		// Read the Zip Code from the Command-line (if none supplied, use 95340)
+		String zipcode = "95340";
 		try {
 			zipcode = args[0];
 		} catch (Exception e) {
