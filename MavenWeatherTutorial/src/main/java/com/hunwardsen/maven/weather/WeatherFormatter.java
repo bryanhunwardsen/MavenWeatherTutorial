@@ -9,7 +9,7 @@ import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.Velocity;
 
 public class WeatherFormatter {
-	private static Logger log = Logger.getLogger(WeatherFormatter.class);
+	private static Logger log = Logger.getLogger(WeatherFormatterTest.class);
 
 	public String format(Weather weather) throws Exception {
 		log.info("Formatting Weather Data");
