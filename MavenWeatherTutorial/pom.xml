@@ -2,47 +2,17 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>hunwardsen.com</groupId>
 	<artifactId>MavenWeatherTutorial</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-
 	<name>MavenWeatherTutorial</name>
-	<url>http://www.hunwardsen.com</url>
 
-	<licenses>
-		<license>
-			<name>Hunwardsen 1.0</name>
-			<url>http://www.hunwardsen.com</url>
-			<distribution>repo</distribution>
-			<comments>A me me me friendly license</comments>
-		</license>
-	</licenses>
-
-	<organization>
-		<name>MavenWeatherTutorial</name>
-		<url>http://www.hunwardsen.com</url>
-	</organization>
-
-	<developers>
-		<developer>
-			<id>bryan</id>
-			<name>Bryan Hunwardsen</name>
-			<email>bryan@hunwardsen.com</email>
-			<url>http://www.hunwardsen.com</url>
-			<organization>Hunwardsen.com</organization>
-			<organizationUrl>http://www.hunwardsen.com</organizationUrl>
-			<roles>
-				<role>developer</role>
-			</roles>
-			<timezone>-8</timezone>
-		</developer>
-	</developers>
-
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-
+	<parent>
+		<groupId>com.hunwardsen</groupId>
+		<artifactId>MavenMultiModule</artifactId>
+		<version>0.0.2-SNAPSHOT</version>
+		<relativePath>../../MavenMultiModule/MavenMultiModule</relativePath>
+	</parent>
+	
 	<dependencies>
 		<dependency>
 			<groupId>log4j</groupId>
@@ -106,4 +76,5 @@
 			</plugin>
 		</plugins>
 	</build>
+
 </project>
